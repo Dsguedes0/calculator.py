@@ -1,1 +1,29 @@
-Simple Calculator with Python
+import math
+
+def mais(a1, a2):
+    return a1 + a2
+
+def subtracao(a1, a2): 
+    return a1 - a2
+
+def multiplicacao(a1, a2): 
+    return a1 * a2
+
+print("Selecione uma operação: mais, subtracao ou multiplicacao")
+
+select = input("Escolha entre as operações: ")
+
+a1 = int(input("num1: ")) 
+a2 = int(input("num2: "))  
+
+if select == "mais":
+    print(mais(a1, a2))
+
+elif select == "subtracao":
+    print(subtracao(a1, a2))
+
+elif select == "multiplicacao":
+    print(multiplicacao(a1, a2))
+
+else:
+    print("Operação inválida")
